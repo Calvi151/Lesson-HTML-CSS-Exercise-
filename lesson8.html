@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 8 Exercises</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    /* 8a - Text boxes in separate lines */
+    .block-input {
+      display: block;
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 200px;
+      border-radius: 15px;
+      border: 1px solid #ccc;
+    }
+
+    /* 8b - Paragraph and buttons inline */
+    .survey-container {
+      border: 1px solid #ccc;
+      padding: 12px;
+      margin-top: 30px;
+    }
+
+    .survey-text,
+    .survey-button {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .survey-text {
+      width: 70%;
+    }
+
+    .survey-button {
+      margin-left: 10px;
+    }
+
+    /* 8c - Google form style */
+    .google-container {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .google-logo {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    .google-search-box {
+      padding: 12px 20px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      font-size: 16px;
+    }
+
+    .input-form{
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 50px;
+      border-radius: 50px;
+      border: solid 1px #ccc;
+    }
+
+    .email{
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 320px;
+      border-radius: 10px;
+      border: solid 1px #ccc;
+    }
+
+    .signup{
+      padding: 10px;
+      width: 320px;
+      background-color: rgb(21, 21, 187);
+      color: whitesmoke;
+      border-radius: 10px;
+    }
+
+    .form{
+      width: 350px;
+      padding: 10px;
+    }
+    .request{
+      padding: 10px;
+      width: 200px;
+      background-color: black;
+      color: whitesmoke;
+    }
+    .request2{
+      padding: 10px;
+      width: 200px;
+      background-color:rgb(211, 191, 191);
+      color: black;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 8a -->
+  <input type="text" placeholder="Name" class="block-input">
+  <input type="email" placeholder="Email" class="block-input">
+
+  <!-- 8b -->
+  <div class="survey-container">
+    <p class="survey-text">Thanks for chatting with our customer support. Would you like to take our quick survey?</p>
+    <button class="survey-button">Yes</button>
+    <button class="survey-button">No</button>
+  </div>
+
+  <!-- 8c -->
+  <div class="google-container">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="google-logo">
+    <br />
+    <input type="text" placeholder="Search Google or type a URL" class="google-search-box">
+  </div>
+  
+  <br>
+
+  <div claass="input-form">
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="First Name">
+</div>
+  <br>
+  <input type="text" placeholder="Email" class="email">
+<br>
+  <button class="signup">Sign Up</button>
+<br>
+  <h1>
+    Request a ride now
+  </h1>
+    <div class="form">
+      <input type="text" placeholder="Enter pickup location">
+      <br>
+      <br>
+      <input type="text" placeholder="Enter destination">
+    </div>
+    <button class="request">
+      Request now
+    </button>
+     <button class="request2">
+      Schedule for later
+      </button>
+</body>
+</html>

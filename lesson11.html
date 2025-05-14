@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lesson11</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 200px 75px;
+      padding: 10px;
+    }
+
+    .kolom1 {
+      background-color: blue;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    .kolom2 {
+      background-color: pink;
+      color: black;
+      display: flex;
+      justify-content: center;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 50px 2fr 75px;
+        padding: 10px;
+    }
+
+    .kolom3{
+        background-color: blue;
+        color: black;
+        display: flex;
+    }
+
+    .kolom4{
+        background-color: pink;
+        color: black;
+        display: flex;
+    }
+
+    .kolom5{
+      background-color: blue;
+      color: black;
+      display: flex;
+    }
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+      } 
+
+.lightpink {
+  background-color: lightpink;
+}
+
+    .friend-card {
+      width: 200px;
+      border: 1px solid lightgray;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .friend-card img {
+      width: 200px;
+      height: 200px;
+      border-radius: 6px;
+    }
+
+    .friend-card ms{
+      width: 30px;
+      border-radius: 50px;
+    }
+  
+
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="kolom1">200px</div>
+    <div class="kolom2">75px</div>
+  </div>
+  <div class="grid">
+    <div class="kolom3">col1</div>
+    <div class="kolom4">col2</div>
+    <div class="kolom5">col3</div>
+  </div>
+   <div class="grid2">
+      <div class="lightpink">col1</div>
+      <div class="lightpink">col2</div>
+      <div class="lightpink">col3</div>
+      <div class="lightpink">col4</div>
+      <div class="lightpink">col1</div>
+      <div class="lightpink">col2</div>
+      <div class="lightpink">col3</div>
+      <div class="lightpink">col4</div>
+    </div>
+  <br>
+  <div class="friend-card">
+    <img src="cat.jpg" alt="Mimi">
+    <p><strong>Mimi</strong></p>
+    <div style="display: flex; align-items: center; gap: 4px;">
+    <img class="profile-picture" src="cat.jpg" style="width: 28px; height: 28px; border-radius: 14px; margin-right: 4px;">
+    <p>3 mutual friends</p>
+    </div>
+    <button>Add Friend</button>
+  </div>
+  <div class="friend-card">
+    <img src="cat2.jpg" alt="Mimi">
+    <p><strong>Mimi</strong></p>
+    <div style="display: flex; align-items: center; gap: 4px;">
+    <img class="profile-picture" src="cat2.jpg" style="width: 28px; height: 28px; border-radius: 14px; margin-right: 4px;">
+    <p>3 mutual friends</p>
+    </div>
+    <button>Add Friend</button>
+  </div>
+  <div class="friend-card">
+    <img src="dog.jpg" alt="Mimi">
+    <p><strong>Mimi</strong></p>
+    <div style="display: flex; align-items: center; gap: 4px;">
+    <img class="profile-picture" src="dog.jpg" style="width: 28px; height: 28px; border-radius: 14px; margin-right: 4px;">
+    <p>3 Mutual Friends</p>
+    </div>
+    <button>Add Friend</button>
+  </div>
+  
+</body>
+</html>
