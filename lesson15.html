@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson15</title>
+    <style>
+        .close{
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            align-items: center;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            top: -18px;
+            display: flex;
+            right: 15px;
+            font-size: 20px;
+            left: -18px;
+        }
+
+        .abu{
+            width: 320px;
+            height: 180px;
+            background-color: gray;
+            bottom: 10px;
+            position: fixed;
+            left: 30px;
+            right: 20px;
+            top: 30px;
+        }
+
+        .video-dt{
+                background-color: black;
+                color: white;
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                font-family: Arial;
+                font-size: 18px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                }
+                .product-container {
+                position: absolute;
+                display: inline-block;
+                margin-top: 250px;
+                width: 100x;
+                height: 100px;
+}
+
+.product-gambar {
+  width: 10x;
+  height: 10px;
+  object-fit: cover;
+}
+
+.promosi {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.bottom-overlay {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart-button {
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+    </style>
+</head>
+<body>
+  <div class="abu">
+    <div class="close">X</div>
+    <div class="video-dt">02:13</div>
+  </div>
+<br>
+<br>
+   <div class="product-container">
+      <img class="produk-gambar" src="baju.jpg">
+      <div class="promosi">20% OFF</div>
+      <div class="bottom-overlay">
+        <button class="add-to-cart-button">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+</body>
+</html>

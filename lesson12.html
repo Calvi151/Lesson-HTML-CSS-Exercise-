@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lesson 12</title>
     <style>
     .grid-container {
       display: grid;
@@ -105,16 +105,87 @@
         color: white;
     }
 
-    .google{
-        height: 20px;
-        width: 500px;
-        border-radius: 30px;
-        color: black;
-        background-color: whitesmoke;
-        padding: 5px;
-       justify-content: center;
-       
-    }
+   .search {
+    display: flex;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    align-items: center;
+    justify-content: space-between; /* Membagi ruang secara merata */
+  }
+
+  .search h3 {
+    margin: 0 15px;
+    white-space: nowrap;
+  }
+
+  .google {
+    width: 60%; 
+    max-width: 500px; 
+    border-radius: 30px;
+    padding: 8px 15px;
+    border: none;
+    background-color: whitesmoke;
+    margin: 0 20px; 
+  }
+
+  .search .download {
+    border: 1px solid white;
+    padding: 5px 10px; 
+    margin-left: 15px;
+  }
+
+    .profile-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px 5px; /* Padding samping diperkecil */
+            border-bottom: 1px solid #eee;
+            gap: 5px; /* Jarak antar elemen diperketat */
+        }
+        
+        .profile-info {
+            flex-grow: 1;
+            margin-right: 5px; /* Jarak ke tombol diperkecil */
+        }
+        
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            white-space: nowrap;
+        }
+        
+        .profile-type {
+            font-size: 14px;
+            color: #666;
+            margin: 2px 0;
+        }
+        
+        .profile-status {
+            font-size: 12px;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .follow-btn {
+            background-color: rgb(17, 132, 226);
+            color: white;
+            padding: 4px 10px; /* Ukuran tombol diperkecil */
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 0; /* Margin kiri dihilangkan */
+            white-space: nowrap;
+        }
+        
+        .profile-pic {
+            width: 45px; /* Ukuran gambar diperkecil */
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px; /* Jarak gambar ke teks diperkecil */
+        }
     </style>
 </head>
 <body>
@@ -162,6 +233,42 @@
         <div class="notif">5</div>
     </div>
     <br>
-    <input type="text" placeholder="Search Google or type a URL" class="google">
+    <div class="search">
+       <h3>Home</h3>
+        <input type="text" placeholder="Search Google or type a URL" class="google">
+        <h3 class="download">Download</h3>
+    </div>
+    
+    <div class="profile-row">
+        <img src="cat.jpg" alt="Oliver" class="profile-pic">
+        <div class="profile-info">
+            <div class="profile-name">Oliver</div>
+            <div class="profile-type">the cat</div>
+            <div class="profile-status">Popular</div>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+    
+    <!-- Mimi Sleepy Cat -->
+    <div class="profile-row">
+        <img src="cat2.jpg" alt="Mimi" class="profile-pic">
+        <div class="profile-info">
+            <div class="profile-name">Mimi</div>
+            <div class="profile-type">Sleepy Cat</div>
+            <div class="profile-status">Popular</div>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+    
+    <!-- Rex Happy Bulldog -->
+    <div class="profile-row">
+        <img src="dog.jpg" alt="Rex" class="profile-pic">
+        <div class="profile-info">
+            <div class="profile-name">Rex</div>
+            <div class="profile-type">Happy Bulldog</div>
+            <div class="profile-status">Popular</div>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
 </body>
 </html>
